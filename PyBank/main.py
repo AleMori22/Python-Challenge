@@ -42,8 +42,9 @@ print('Greatest Increase in Profits: ',Name_max, ' ($', Max,')')
 
 print('Greatest Decrease in Profits: ', Name_min , ' ($', Min,')')
 
+budget_results = r'PyBank\Analysis\budget_results.txt'
 
-with open("Pypoll", "Analysis", "officeroster.txt", 'w') as txtfile:
+with open(budget_results, 'w') as txtfile:
      
      txtfile.write('Financial Analysis')
      txtfile.write('\n')
