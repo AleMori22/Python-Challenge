@@ -36,7 +36,7 @@ print('Total Months: ', Nmonth)
 
 print('Total: $', Total )
 
-print('Average: $', Average)
+print('Average: $', round(Average, 2))
 
 print('Greatest Increase in Profits: ',Name_max, ' ($', Max,')')
 
@@ -52,16 +52,16 @@ with open(budget_results, 'w') as txtfile:
      txtfile.write('-------------------------')
      txtfile.write('\n')
      
-     txtfile.write('Total Months:' + str(Nmonth))
+     txtfile.write(f'Total Months: {str(Nmonth)}')
      txtfile.write('\n')
      
-     txtfile.write('Total: $' + str(Total))
+     txtfile.write(f'Total: $  {str(Total)}')
      txtfile.write('\n')
      
-     txtfile.write('Average: $' + str(Average))
+     txtfile.write(f'Average: $ {round(Average, 2)}')
      txtfile.write('\n')
 
-     txtfile.write('Greatest Increase in Profits:' + str(Name_max) + '($' + str(Max) + ')')
+     txtfile.write(f'Greatest Increase in Profits: {str(Name_max)} ($ {str(Max)})')
      txtfile.write('\n')
 
-     txtfile.write('Greatest Decrease in Profits:' + str(Name_min) + '($' + str(Min) + ')')
+     txtfile.write(f'Greatest Decrease in Profits: {str(Name_min)} (${str(Min)})')
